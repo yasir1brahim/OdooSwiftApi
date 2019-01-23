@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="OdooSwiftApi_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Odoo controller URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbe-dz-u37">
+                                <rect key="frame" x="20" y="46" width="201" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Result" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bqc-Vw-TuY">
+                                <rect key="frame" x="20" y="151" width="374" height="565"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVh-Vc-b86">
+                                <rect key="frame" x="353" y="113" width="36" height="30"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="SendButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3lo-OI-N8C"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i9j-gc-oMM">
+                                <rect key="frame" x="20" y="75" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i9j-gc-oMM" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="84a-bh-OcK"/>
+                            <constraint firstItem="Jbe-dz-u37" firstAttribute="leading" secondItem="i9j-gc-oMM" secondAttribute="leading" id="9YE-Fp-Vie"/>
+                            <constraint firstItem="i9j-gc-oMM" firstAttribute="leading" secondItem="bqc-Vw-TuY" secondAttribute="leading" id="AfH-6u-6NM"/>
+                            <constraint firstItem="i9j-gc-oMM" firstAttribute="trailing" secondItem="bqc-Vw-TuY" secondAttribute="trailing" id="Ckr-Ku-u0u"/>
+                            <constraint firstItem="bqc-Vw-TuY" firstAttribute="top" secondItem="hVh-Vc-b86" secondAttribute="bottom" constant="8" symbolic="YES" id="LC5-i1-go6"/>
+                            <constraint firstItem="Jbe-dz-u37" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Ndq-BG-JF2"/>
+                            <constraint firstItem="i9j-gc-oMM" firstAttribute="top" secondItem="Jbe-dz-u37" secondAttribute="bottom" constant="8" symbolic="YES" id="PDJ-Ji-drq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hVh-Vc-b86" secondAttribute="trailing" constant="5" id="eGh-RL-znq"/>
+                            <constraint firstItem="Jbe-dz-u37" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="26" id="fu2-SQ-5gq"/>
+                            <constraint firstAttribute="bottom" secondItem="bqc-Vw-TuY" secondAttribute="bottom" constant="20" symbolic="YES" id="mo1-5C-gHb"/>
+                            <constraint firstItem="hVh-Vc-b86" firstAttribute="top" secondItem="i9j-gc-oMM" secondAttribute="bottom" constant="8" symbolic="YES" id="wcX-7O-sCM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultTextView" destination="bqc-Vw-TuY" id="MrX-nc-bBt"/>
+                        <outlet property="urlTextField" destination="i9j-gc-oMM" id="9t7-SO-PHI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="97.601199400299862"/>
+        </scene>
+    </scenes>
+</document>

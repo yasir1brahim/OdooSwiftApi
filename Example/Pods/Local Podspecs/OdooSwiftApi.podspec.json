@@ -1,0 +1,28 @@
+{
+  "name": "OdooSwiftApi",
+  "version": "0.1.0",
+  "summary": "A short description of OdooSwiftApi.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yasir1brahim/OdooSwiftApi",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yasir1brahim": "ahafeez@knysys.com"
+  },
+  "source": {
+    "git": "https://github.com/yasir1brahim/OdooSwiftApi.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "OdooSwiftApi/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 4.7"
+    ]
+  },
+  "swift_version": "4.2"
+}

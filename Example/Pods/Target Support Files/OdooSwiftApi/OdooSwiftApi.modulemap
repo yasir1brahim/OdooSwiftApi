@@ -1,0 +1,6 @@
+framework module OdooSwiftApi {
+  umbrella header "OdooSwiftApi-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_OdooSwiftApi_Tests {
+  umbrella header "Pods-OdooSwiftApi_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

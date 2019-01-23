@@ -1,0 +1,11 @@
+use_frameworks!
+platform :ios, '9.0'
+
+target 'OdooSwiftApi_Example' do
+  pod 'OdooSwiftApi', :path => '../'
+
+  target 'OdooSwiftApi_Tests' do
+    inherit! :search_paths
+
+  end
+end

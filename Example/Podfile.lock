@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (4.8.1)
+  - OdooSwiftApi (0.1.0):
+    - Alamofire (~> 4.7)
+
+DEPENDENCIES:
+  - OdooSwiftApi (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  OdooSwiftApi:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  OdooSwiftApi: f220017664e904ec172c0f97901d51e35b5d72e0
+
+PODFILE CHECKSUM: 1c7fcc6c3c852b13e5c66bd9ffcd9e546b003de2
+
+COCOAPODS: 1.5.3
