@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		107CDE4E8793D85F1C20643B /* Pods-OdooSwiftApi_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdooSwiftApi_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OdooSwiftApi_Example/Pods-OdooSwiftApi_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5F12199E896D0BD7D001BACD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5F12199E896D0BD7D001BACD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* OdooSwiftApi_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OdooSwiftApi_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +43,8 @@
 		63086053A153CCB1D8FD9FFB /* Pods_OdooSwiftApi_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OdooSwiftApi_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6790E22D3967164437FFF444 /* Pods-OdooSwiftApi_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdooSwiftApi_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OdooSwiftApi_Example/Pods-OdooSwiftApi_Example.release.xcconfig"; sourceTree = "<group>"; };
 		792391C4F80C0D7A218A6514 /* Pods_OdooSwiftApi_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OdooSwiftApi_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD1F6E08FF52A07927539461 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		CF7318C1189B6E957CDFBA5A /* OdooSwiftApi.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OdooSwiftApi.podspec; path = ../OdooSwiftApi.podspec; sourceTree = "<group>"; };
+		BD1F6E08FF52A07927539461 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CF7318C1189B6E957CDFBA5A /* OdooSwiftApi.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OdooSwiftApi.podspec; path = ../OdooSwiftApi.podspec; sourceTree = "<group>"; };
 		F4F66DEB3C7FAEDC1C70EDEE /* Pods-OdooSwiftApi_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdooSwiftApi_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OdooSwiftApi_Tests/Pods-OdooSwiftApi_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF952B2D8F5255CC26F544B8 /* Pods-OdooSwiftApi_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdooSwiftApi_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OdooSwiftApi_Tests/Pods-OdooSwiftApi_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,11 +212,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1010;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1010;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -476,8 +476,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -491,8 +490,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -512,8 +510,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OdooSwiftApi_Example.app/OdooSwiftApi_Example";
 			};
 			name = Debug;
@@ -530,8 +527,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OdooSwiftApi_Example.app/OdooSwiftApi_Example";
 			};
 			name = Release;
